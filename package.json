@@ -1,0 +1,18 @@
+{
+  "name": "portfoliowebpage",
+  "version": "1.0.0",
+  "description": "My portfolio of proyects",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "keywords": [
+    "html",
+    "javascript",
+    "typescript",
+    "css"
+  ],
+  "author": "Edgar Pech <edgaropech@hotmail.com>",
+  "license": "MIT"
+}
