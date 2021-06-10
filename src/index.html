@@ -11,20 +11,21 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div id="nav">
-        <header class="nav-wrapper" id="navBar">
-            <a href="#main">Logo</a>
-            <nav class="nav-bar">
-                <ul class="nav-bar__list">
-                    <li><a href="#aboutme">About me</a></li>
-                    <li><a href="">Habilities</a></li>
-                    <li><a href="">Proyects</a></li>
-                    <li><a href="">Contact me</a></li>
-                </ul>
-            </nav>
-        </header>
-    </div>
-    <!-- <button id="button">VIEW</button> -->
+    <!-- Navigation menu -->
+    <header class="nav-wrapper" id="navBar">
+        <div class="nav-main-buttons">
+            <a href="#main" class="active">Logo</a>
+            <span class="burger-menu" id="hm-menu">
+            </span>
+        </div>
+            <!-- links -->
+            <div class="hide" id="items-nav">
+                <a href="#aboutme">About me</a>
+                <a href="">Habilities</a>
+                <a href="">Proyects</a>
+                <a href="">Contact me</a>
+            </div>
+    </header>
     <main class="main-profile" id="main">
         <div class="title-profile">
             <h1>Hi! I'm Edgar</h1>
@@ -61,20 +62,28 @@
             <div class="reactjs icon icon-animation"></div>
         </div>
     </section>
-    <section>
+    <section class="proyects">
         <h1>My Proyects</h1>
+        <div class="proyects-container">
+            <div class="proyect-info"></div>
+            <div class="proyect-info"></div>
+            <div class="proyect-info"></div>
+            <div class="proyect-info"></div>
+        </div>
     </section>
-    <section>
-        <form action="">
+    <section class="mail-section">
+        <h3>Send me an email</h3>
+        <form class="mail-form">
             <label for="email"> Email
                 <input id="email" type="email">
             </label>
             <label for="subject">Subject
                 <input type="text" id="subject">
             </label>
-            <label for="body-mail">
+            <label for="body-mail">Message
                 <input type="text" id="body-mail">
             </label>
+            <button>Send</button>
         </form>
     </section>
     <footer class="socialmedia icon">
@@ -82,6 +91,7 @@
         <div class="twitter icon"></div>
         <div class="linkedin icon"></div>
     </footer>
+    <script src="./scripts/main.js"></script>
     <!-- <script src="./index.js" type="module"></script> -->
 </body>
 </html>
