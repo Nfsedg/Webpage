@@ -1,0 +1,89 @@
+.aboutme {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    font-size: 1.8rem;
+    text-align: center;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    z-index: 0;
+    background-color: $color-claro;
+    padding: 50px 25px;
+    h1 {
+        font-family: $Fuente-titulos;
+    }
+    p {
+        font-family: $Fuente-textos;
+    }
+    &__img-container {
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        margin: auto;
+        position: relative;
+    }
+    &__img {
+        width: 250px;
+        height: 250px;
+        position: absolute;
+        border-radius: 50%;
+        right: calc(50% - 125px);
+    }
+    &__face {
+        align-self: center;
+        width: 250px;
+        height: 250px;
+        background-color: rgb(148, 123, 91);
+        border-radius: 50%;
+        position: absolute;
+        right: calc(50% - 125px);
+        transition: opacity 1s;
+    }
+    &__img-container:hover &__face {
+        opacity: 0;
+    }
+    &__layover {
+        height: 180px;
+        width: 130px;
+        background-color: burlywood;
+        position: relative;
+        left: calc(50% - 65px);
+        top: 45px;
+        border-radius: 25px 25px 50% 50%;
+    }
+    &__face--eye-left, &__face--eye-right {
+        height: 30px;
+        width: 30px;
+        background-color: white;
+        border-radius: 50%;
+    }
+    &__face--eye-left {
+        position: absolute;
+        top: 50px;
+        left: 30px;
+    }
+}
+.aboutme__face--eye-right {
+    position: absolute;
+    top: 50px;
+    left: 70px;
+}
+.aboutme__face--mouth-1 {
+    width: 45px;
+    height: 25px;
+    background-color: black;
+    position: absolute;
+    right: 20px;
+    top: 125px;
+    border-radius: 0 0 100%;
+}
+.aboutme__face--mouth-2 {
+    width: 46px;
+    height: 25px;
+    background-color: black;
+    position: absolute;
+    left: 20px;
+    top: 125px;
+    border-radius: 0 0 0 100%;
+}

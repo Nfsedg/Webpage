@@ -5,91 +5,92 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edgar Pech</title>
-    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/mobile.css">
+    <link rel="stylesheet" href="./styles/desktop.css">
     <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Benne&family=Noto+Serif&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Navigation menu -->
-    <header class="nav-wrapper" id="navBar">
-        <div class="nav-main-buttons">
-            <a href="#main" class="active">Logo</a>
-            <span class="burger-menu" id="hm-menu">
-            </span>
+    <header class="navigation" id="navBar">
+        <div class="navigation__buttons">
+            <a href="#main" class="navigation__logo">Logo</a>
+            <span class="navigation__burgermenu" id="hm-menu"></span>
         </div>
             <!-- links -->
-            <div class="hide" id="items-nav">
-                <a href="#aboutme">About me</a>
-                <a href="">Habilities</a>
-                <a href="">Proyects</a>
-                <a href="">Contact me</a>
-            </div>
+        <div class="hide" id="items-nav">
+            <a href="#aboutme">About me</a>
+            <a href="#tecnologies">Technologies</a>
+            <a href="#proyects">Proyects</a>
+            <a href="#message">Contact me</a>
+        </div>
     </header>
-    <main class="main-profile" id="main">
-        <div class="title-profile">
+    <!-- Main section profile -->
+    <main class="main" id="main">
+        <div class="main__title">
             <h1>Hi! I'm Edgar</h1>
             <p>Web Developer</p>
         </div>
     </main>
-    <section class="about-me" id="aboutme">
-        <picture class="img-container">
-            <img src="./img/notmyface.jpg" alt="my face" class="img-face">
-            <div class="background-face">
-                <div class="face">
-                    <div class="eye-left"></div>
-                    <div class="eye-right"></div>
-                    <div class="mouth-1"></div>
-                    <div class="mouth-2"></div>
+    <section class="aboutme" id="aboutme">
+        <picture class="aboutme__img-container">
+            <img src="./img/notmyface.jpg" alt="my face" class="aboutme__img">
+            <div class="aboutme__face">
+                <div class="aboutme__layover">
+                    <div class="aboutme__face--eye-left"></div>
+                    <div class="aboutme__face--eye-right"></div>
+                    <div class="aboutme__face--mouth-1"></div>
+                    <div class="aboutme__face--mouth-2"></div>
                 </div>
             </div>
         </picture>
         <h1>About me</h1>
         <p>I'm a web developer and live in Cancún, México. I'm interested on website and webapps developing for desktop and mobile.</p>
     </section>
-    <section class="about-me__tecnologies">
+    <section class="tecnologies" id="tecnologies">
         <h1>Technologies</h1>
-        <div class="about-me__icons">
-            <div class="html icon icon-animation"></div>
-            <div class="css icon icon-animation"></div>
-            <div class="js icon icon-animation"></div>
-            <div class="typescript icon icon-animation"></div>
-            <div class="npm icon icon-animation"></div>
-            <div class="git icon icon-animation"></div>
-            <div class="webpack icon icon-animation"></div>
-            <div class="nodejs icon icon-animation"></div>
-            <div class="bash icon icon-animation"></div>
-            <div class="reactjs icon icon-animation"></div>
+        <div class="tecnologies__icons">
+            <div class="html tecnologies__icons--animation"></div>
+            <div class="css tecnologies__icons--animation"></div>
+            <div class="js tecnologies__icons--animation"></div>
+            <div class="typescript tecnologies__icons--animation"></div>
+            <div class="npm tecnologies__icons--animation"></div>
+            <div class="git tecnologies__icons--animation"></div>
+            <div class="webpack tecnologies__icons--animation"></div>
+            <div class="nodejs tecnologies__icons--animation"></div>
+            <div class="bash tecnologies__icons--animation"></div>
+            <div class="reactjs tecnologies__icons--animation"></div>
         </div>
     </section>
-    <section class="proyects">
+    <section class="proyects" id="proyects">
         <h1>My Proyects</h1>
-        <div class="proyects-container">
-            <div class="proyect-info"></div>
-            <div class="proyect-info"></div>
-            <div class="proyect-info"></div>
-            <div class="proyect-info"></div>
+        <div class="proyects__container">
+            <div class="proyects__info"></div>
+            <div class="proyects__info"></div>
+            <div class="proyects__info"></div>
+            <div class="proyects__info"></div>
         </div>
     </section>
-    <section class="mail-section">
+    <section class="message" id="message">
         <h3>Send me an email</h3>
-        <form class="mail-form">
-            <label for="email"> Email
+        <form class="message__form">
+            <label for="email" class="message__email"><span>Email</span> 
                 <input id="email" type="email">
             </label>
-            <label for="subject">Subject
+            <label for="subject" class="message__subject"><span>Subject</span>
                 <input type="text" id="subject">
             </label>
-            <label for="body-mail">Message
-                <input type="text" id="body-mail">
+            <label for="body-mail" class="message__body"><span>Message</span>
+                <textarea name="body" id="body" cols="30" rows="10"></textarea>
             </label>
-            <button>Send</button>
+            <input type="submit" class="message__submit">
         </form>
     </section>
-    <footer class="socialmedia icon">
-        <div class="github icon"></div>
-        <div class="twitter icon"></div>
-        <div class="linkedin icon"></div>
+    <footer class="socialmedia">
+        <div class="github"></div>
+        <div class="twitter"></div>
+        <div class="linkedin"></div>
     </footer>
     <script src="./scripts/main.js"></script>
     <!-- <script src="./index.js" type="module"></script> -->

@@ -1,0 +1,53 @@
+$Fuente-titulos: 'Noto Serif', serif; 
+$Fuente-textos: 'Benne', serif;
+$color-primario: #333;
+$color-secundario: rgb(82, 113, 131);
+$color-claro: #d6e0e7;
+
+@mixin background-img {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+@mixin icon {
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 50px;
+    justify-self: center;
+    align-self: center;
+    transition: transform 300ms;
+}
+
+* {
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+.hide {
+    display: none;
+}
+
+.main {
+    @include background-img;
+    background-image: url('../img/backgroud-header.jpg');
+    display: flex;
+    height: 100vh;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+    &__title {
+        font-family: $Fuente-titulos;
+        text-align: center;
+        font-size: 2rem;
+        font-weight: 400;
+    }
+} 

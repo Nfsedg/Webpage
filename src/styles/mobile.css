@@ -1,0 +1,419 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.hide {
+  display: none;
+}
+
+.main {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../img/backgroud-header.jpg");
+  display: flex;
+  height: 100vh;
+  width: auto;
+  justify-content: center;
+  align-items: center;
+}
+.main__title {
+  font-family: "Noto Serif", serif;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.navigation {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  font-family: "Noto Serif", serif;
+}
+.navigation a {
+  display: block;
+  font-size: 1.7rem;
+  padding: 1.4rem 1.6rem;
+  text-decoration: none;
+  color: #d6e0e7;
+}
+.navigation a:hover {
+  color: #333;
+  background-color: #d6e0e7;
+}
+.navigation__buttons {
+  display: flex;
+  justify-content: space-between;
+}
+.navigation__logo {
+  background-color: #527183;
+  color: #d6e0e7;
+}
+.navigation__burgermenu {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../icons/whiteburger.svg");
+  justify-self: center;
+  align-self: center;
+  width: 3rem;
+  height: 3rem;
+  margin-right: 1.5rem;
+  color: #d6e0e7;
+}
+
+.aboutme {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: 100%;
+  font-size: 1.8rem;
+  text-align: center;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  z-index: 0;
+  background-color: #d6e0e7;
+  padding: 50px 25px;
+}
+.aboutme h1 {
+  font-family: "Noto Serif", serif;
+}
+.aboutme p {
+  font-family: "Benne", serif;
+}
+.aboutme__img-container {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  margin: auto;
+  position: relative;
+}
+.aboutme__img {
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  border-radius: 50%;
+  right: calc(50% - 125px);
+}
+.aboutme__face {
+  align-self: center;
+  width: 250px;
+  height: 250px;
+  background-color: #947b5b;
+  border-radius: 50%;
+  position: absolute;
+  right: calc(50% - 125px);
+  transition: opacity 1s;
+}
+.aboutme__img-container:hover .aboutme__face {
+  opacity: 0;
+}
+.aboutme__layover {
+  height: 180px;
+  width: 130px;
+  background-color: burlywood;
+  position: relative;
+  left: calc(50% - 65px);
+  top: 45px;
+  border-radius: 25px 25px 50% 50%;
+}
+.aboutme__face--eye-left, .aboutme__face--eye-right {
+  height: 30px;
+  width: 30px;
+  background-color: white;
+  border-radius: 50%;
+}
+.aboutme__face--eye-left {
+  position: absolute;
+  top: 50px;
+  left: 30px;
+}
+
+.aboutme__face--eye-right {
+  position: absolute;
+  top: 50px;
+  left: 70px;
+}
+
+.aboutme__face--mouth-1 {
+  width: 45px;
+  height: 25px;
+  background-color: black;
+  position: absolute;
+  right: 20px;
+  top: 125px;
+  border-radius: 0 0 100%;
+}
+
+.aboutme__face--mouth-2 {
+  width: 46px;
+  height: 25px;
+  background-color: black;
+  position: absolute;
+  left: 20px;
+  top: 125px;
+  border-radius: 0 0 0 100%;
+}
+
+.tecnologies {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 30px 25px;
+}
+.tecnologies h1 {
+  text-align: center;
+  font-size: 1.8rem;
+  font-family: "Noto Serif", serif;
+}
+.tecnologies__icons {
+  margin: 0 auto;
+  width: 330px;
+  height: 330px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas: "a b c d" "e f g h" "i j k l";
+  justify-self: center;
+}
+.tecnologies__icons--animation:hover {
+  transform: scale(1.4);
+}
+
+.github {
+  background-image: url("../icons/github.svg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 50px;
+  width: 50px;
+  justify-self: center;
+  align-self: center;
+  transition: transform 300ms;
+}
+
+.twitter {
+  background-image: url("../icons/twitter.svg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 50px;
+  width: 50px;
+  justify-self: center;
+  align-self: center;
+  transition: transform 300ms;
+}
+
+.linkedin {
+  background-image: url("../icons/linkedin.svg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 50px;
+  width: 50px;
+  justify-self: center;
+  align-self: center;
+  transition: transform 300ms;
+}
+
+.html {
+  background-image: url("../icons/html.svg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 50px;
+  width: 50px;
+  justify-self: center;
+  align-self: center;
+  transition: transform 300ms;
+}
+
+.css {
+  background-image: url("../icons/css.svg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 50px;
+  width: 50px;
+  justify-self: center;
+  align-self: center;
+  transition: transform 300ms;
+}
+
+.js {
+  background-image: url("../icons/js.svg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 50px;
+  width: 50px;
+  justify-self: center;
+  align-self: center;
+  transition: transform 300ms;
+}
+
+.typescript {
+  background-image: url("../icons/typescript.svg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 50px;
+  width: 50px;
+  justify-self: center;
+  align-self: center;
+  transition: transform 300ms;
+}
+
+.npm {
+  background-image: url("../icons/npm.svg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 50px;
+  width: 50px;
+  justify-self: center;
+  align-self: center;
+  transition: transform 300ms;
+}
+
+.git {
+  background-image: url("../icons/git.svg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 50px;
+  width: 50px;
+  justify-self: center;
+  align-self: center;
+  transition: transform 300ms;
+}
+
+.webpack {
+  background-image: url("../icons/webpack.svg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 50px;
+  width: 50px;
+  justify-self: center;
+  align-self: center;
+  transition: transform 300ms;
+}
+
+.nodejs {
+  background-image: url("../icons/nodejs.svg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 50px;
+  width: 50px;
+  justify-self: center;
+  align-self: center;
+  transition: transform 300ms;
+}
+
+.bash {
+  background-image: url("../icons/bash.svg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 50px;
+  width: 50px;
+  justify-self: center;
+  align-self: center;
+  transition: transform 300ms;
+  grid-area: j;
+}
+
+.reactjs {
+  background-image: url("../icons/reactjs.svg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 50px;
+  width: 50px;
+  justify-self: center;
+  align-self: center;
+  transition: transform 300ms;
+  grid-area: k;
+}
+
+.proyects {
+  width: 100%;
+}
+.proyects h1 {
+  text-align: center;
+  font-size: 1.8rem;
+  font-family: "Noto Serif", serif;
+}
+.proyects__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.proyects__info {
+  font-family: "Benne", serif;
+  width: 250px;
+  height: 200px;
+  background-color: #333;
+  margin: 1.5rem;
+  border-radius: 0.8rem;
+}
+.proyects__info:hover::backdrop {
+  content: attr(div);
+}
+
+.message {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 30px;
+}
+.message label {
+  display: block;
+  padding-bottom: 14px;
+}
+.message input, .message textarea {
+  width: 100%;
+}
+.message__submit {
+  display: block;
+  width: 50px;
+  margin: 0 auto;
+}
+.message h3 {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+  font-family: "Noto Serif", serif;
+}
+.message span {
+  display: block;
+}
+
+.socialmedia {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #527183;
+}
+
+/*# sourceMappingURL=mobile.css.map */

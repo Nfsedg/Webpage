@@ -1,0 +1,25 @@
+.proyects {
+    width: 100%;
+    h1 {
+        text-align: center;
+        font-size: 1.8rem;
+        font-family: $Fuente-titulos;
+    }
+    &__container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    &__info {
+        font-family: $Fuente-textos;
+        width: 250px;
+        height: 200px;
+        background-color: $color-primario;
+        margin: 1.5rem;
+        border-radius: 0.8rem;
+        &:hover::backdrop {
+            content: attr(div);
+        }
+    }
+}
