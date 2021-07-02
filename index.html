@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edgar Pech</title>
-    <!-- <link rel="stylesheet" href="/docs/styles/desktop.css"> -->
-    <link rel="stylesheet" href="docs/styles/mobile.css">
+    <link rel="stylesheet" href="/docs/styles/desktop.css" media="(min-width: 700px)" >
+    <link rel="stylesheet" href="docs/styles/mobile.css" media="(max-width: 700px)">
     <link rel="shortcut icon" href="docs/assets/img/favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Benne&family=Noto+Serif&display=swap" rel="stylesheet">
@@ -47,6 +47,9 @@
         </picture>
         <h1>About me</h1>
         <p>I'm a web developer and live in Cancún, México. I'm interested on website and webapps developing for desktop and mobile.</p>
+        <div>
+            <a href="docs/assets/My CV.pdf" class="aboutme__download" download>Download CV</a>
+        </div>
     </section>
     <section class="tecnologies" id="tecnologies">
         <h1>Technologies</h1>
@@ -59,7 +62,7 @@
             <div class="git tecnologies__icons--animation"></div>
             <div class="webpack tecnologies__icons--animation"></div>
             <div class="nodejs tecnologies__icons--animation"></div>
-            <div class="bash tecnologies__icons--animation"></div>
+            <div class="sass tecnologies__icons--animation"></div>
             <div class="reactjs tecnologies__icons--animation"></div>
         </div>
     </section>
@@ -85,14 +88,14 @@
                 <textarea name="body" id="body" cols="30" rows="10"></textarea>
             </label>
             <input type="submit" class="message__submit">
+            <a href="mailto:edgaropech@hotmail.com?subject=Mail from my Website&body=Textd">Send Email</a>
         </form>
     </section>
     <footer class="socialmedia">
-        <a href="https://github.com/Nfsedg/Webpage"><div class="github"></div></a>
-        <a href="https://twitter.com/"><div class="twitter"></div></a>
-        <a href="https://www.linkedin.com/in/edgar-pech-garcia-a9b99316a/"><div class="linkedin"></div></a>
+        <a href="https://github.com/Nfsedg/Webpage" target="_blank" rel="noopener noreferrer"><div class="github"></div></a>
+        <a href="https://twitter.com/" target="_blank"><div class="twitter" rel="noopener noreferrer"></div></a>
+        <a href="https://www.linkedin.com/in/edgar-pech-garcia-a9b99316a/" target="_blank" rel="noopener noreferrer"><div class="linkedin"></div></a>
     </footer>
-    <script src="docs/scripts/main.js"></script>
-    <!-- <script src="./index.js" type="module"></script> -->
+    <script type="text/javascript" src="/docs/scripts/queryjs.js"></script>
 </body>
 </html>

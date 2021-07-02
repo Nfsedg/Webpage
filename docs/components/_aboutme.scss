@@ -43,6 +43,14 @@
     &__img-container:hover &__face {
         opacity: 0;
     }
+    &__download {
+        text-decoration: none;
+        color: $color-secundario;
+        font-family: $Fuente-titulos;
+        &:hover {
+            color: $color-claro;
+        }
+    }
     &__layover {
         height: 180px;
         width: 130px;

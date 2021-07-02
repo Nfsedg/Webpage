@@ -123,6 +123,14 @@ body {
 .aboutme__img-container:hover .aboutme__face {
   opacity: 0;
 }
+.aboutme__download {
+  text-decoration: none;
+  color: #527183;
+  font-family: "Noto Serif", serif;
+}
+.aboutme__download:hover {
+  color: #d6e0e7;
+}
 .aboutme__layover {
   height: 180px;
   width: 130px;
@@ -351,6 +359,19 @@ body {
   align-self: center;
   transition: transform 300ms;
   grid-area: k;
+}
+
+.sass {
+  background-image: url("../icons/sass.svg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 50px;
+  width: 50px;
+  justify-self: center;
+  align-self: center;
+  transition: transform 300ms;
+  grid-area: j;
 }
 
 .proyects {
