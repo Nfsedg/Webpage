@@ -14,5 +14,9 @@
     "css"
   ],
   "author": "Edgar Pech <edgaropech@hotmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "webpac": "^0.0.1-security",
+    "webpack": "^5.43.0"
+  }
 }
