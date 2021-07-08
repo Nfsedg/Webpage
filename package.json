@@ -2,10 +2,9 @@
   "name": "portfoliowebpage",
   "version": "1.0.0",
   "description": "My portfolio of proyects",
-  "main": "index.js",
+  "main": "./docs/scripts/queryjs.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
     "html",
@@ -16,7 +15,6 @@
   "author": "Edgar Pech <edgaropech@hotmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "webpac": "^0.0.1-security",
     "webpack": "^5.43.0"
   }
 }
