@@ -22,16 +22,17 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-image: url("../img/backgroud-header.jpg");
+  background-attachment: fixed;
   display: flex;
-  height: 100vh;
   width: auto;
   justify-content: center;
   align-items: center;
+  height: 100vh;
 }
 .main__title {
   font-family: "Noto Serif", serif;
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 400;
 }
 
@@ -45,6 +46,13 @@ body {
   z-index: 1;
   font-family: "Noto Serif", serif;
 }
+@media only screen and (min-width: 700px) {
+  .navigation {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+}
 .navigation a {
   display: block;
   font-size: 1.7rem;
@@ -55,6 +63,11 @@ body {
 .navigation a:hover {
   color: #333;
   background-color: #d6e0e7;
+}
+@media only screen and (min-width: 700px) {
+  .navigation a {
+    display: inline-block;
+  }
 }
 .navigation__buttons {
   display: flex;
@@ -76,12 +89,18 @@ body {
   margin-right: 1.5rem;
   color: #d6e0e7;
 }
+@media only screen and (min-width: 700px) {
+  .navigation__burgermenu {
+    display: none;
+  }
+}
 
 .aboutme {
   display: flex;
   flex-direction: column;
   height: auto;
   width: 100%;
+  height: 640px;
   font-size: 1.8rem;
   text-align: center;
   padding-top: 5rem;
@@ -89,6 +108,7 @@ body {
   z-index: 0;
   background-color: #d6e0e7;
   padding: 50px 25px;
+  justify-content: center;
 }
 .aboutme h1 {
   font-family: "Noto Serif", serif;
@@ -100,7 +120,7 @@ body {
   width: 250px;
   height: 250px;
   border-radius: 50%;
-  margin: auto;
+  margin: 0 auto;
   position: relative;
 }
 .aboutme__img {
@@ -199,8 +219,99 @@ body {
   grid-template-areas: "a b c d" "e f g h" "i j k l";
   justify-self: center;
 }
+@media only screen and (min-width: 1200px) {
+  .tecnologies__icons {
+    width: 580px;
+  }
+}
 .tecnologies__icons--animation:hover {
   transform: scale(1.4);
+}
+
+.proyects {
+  width: 100%;
+}
+.proyects h1 {
+  text-align: center;
+  font-size: 1.8rem;
+  font-family: "Noto Serif", serif;
+}
+.proyects__container {
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+}
+@media only screen and (min-width: 700px) {
+  .proyects__container {
+    width: 700px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .proyects__container {
+    width: 1100px;
+  }
+}
+.proyects__info {
+  font-family: "Benne", serif;
+  width: 250px;
+  height: 200px;
+  background-color: #333;
+  margin: 1.5rem;
+  border-radius: 0.8rem;
+  justify-self: center;
+}
+.proyects__info:hover::backdrop {
+  content: attr(div);
+}
+
+.message {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 30px;
+}
+.message label {
+  display: block;
+  padding-bottom: 14px;
+}
+.message input, .message textarea {
+  width: 100%;
+}
+.message__submit {
+  display: block;
+  width: 50px;
+  margin: 0 auto;
+}
+.message h3, .message p {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+  font-family: "Noto Serif", serif;
+}
+.message span {
+  display: block;
+}
+
+.socialmedia {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #527183;
+}
+@media only screen and (min-width: 700px) {
+  .socialmedia {
+    padding: 0 200px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .socialmedia {
+    padding: 0 340px;
+  }
 }
 
 .github {
@@ -372,69 +483,6 @@ body {
   align-self: center;
   transition: transform 300ms;
   grid-area: j;
-}
-
-.proyects {
-  width: 100%;
-}
-.proyects h1 {
-  text-align: center;
-  font-size: 1.8rem;
-  font-family: "Noto Serif", serif;
-}
-.proyects__container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-.proyects__info {
-  font-family: "Benne", serif;
-  width: 250px;
-  height: 200px;
-  background-color: #333;
-  margin: 1.5rem;
-  border-radius: 0.8rem;
-}
-.proyects__info:hover::backdrop {
-  content: attr(div);
-}
-
-.message {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  padding: 20px 30px;
-}
-.message label {
-  display: block;
-  padding-bottom: 14px;
-}
-.message input, .message textarea {
-  width: 100%;
-}
-.message__submit {
-  display: block;
-  width: 50px;
-  margin: 0 auto;
-}
-.message h3 {
-  text-align: center;
-  font-size: 1.8rem;
-  margin-bottom: 30px;
-  font-family: "Noto Serif", serif;
-}
-.message span {
-  display: block;
-}
-
-.socialmedia {
-  width: 100%;
-  height: 70px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  background-color: #527183;
 }
 
 /*# sourceMappingURL=mobile.css.map */
