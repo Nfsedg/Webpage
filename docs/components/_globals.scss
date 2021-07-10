@@ -20,7 +20,14 @@ $desktop: 700px;
     align-self: center;
     transition: transform 300ms;
 }
-
+@mixin media ($breakpoint) {
+    @if($breakpoint == desktop) {
+        @media only screen and (min-width: 700px) {@content;}
+    }
+    @else if $breakpoint == desktop-m {  
+        @media only screen and (min-width: 1200px) { @content; }  
+      }
+}
 * {
     box-sizing: border-box;
 }
@@ -40,15 +47,16 @@ body {
 .main {
     @include background-img;
     background-image: url('../img/backgroud-header.jpg');
+    background-attachment: fixed;
     display: flex;
-    height: 100vh;
     width: auto;
     justify-content: center;
     align-items: center;
+    height: 100vh;
     &__title {
         font-family: $Fuente-titulos;
         text-align: center;
-        font-size: 2rem;
+        font-size: 1.8rem;
         font-weight: 400;
     }
 } 

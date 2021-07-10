@@ -7,6 +7,11 @@
     width: 100%;
     z-index: 1;
     font-family: $Fuente-titulos;
+    @include media(desktop) {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+    }
     a {
         display: block;
         font-size: 1.7rem;
@@ -17,11 +22,15 @@
             color: $color-primario;
             background-color: $color-claro;
         }
+        @include media(desktop) {
+            display: inline-block;
+        }
     }
     &__buttons {
         display: flex;
         justify-content: space-between;
     }
+
     &__logo {
         background-color: $color-secundario;
         color: $color-claro;
@@ -35,5 +44,8 @@
         height: 3rem;
         margin-right: 1.5rem;
         color: $color-claro;
+        @include media(desktop) {
+            display: none;
+        }
     }
 }

@@ -5,4 +5,10 @@
     justify-content: space-around;
     align-items: center;
     background-color: $color-secundario;
+    @include media(desktop) {
+        padding: 0 200px;
+    }
+    @include media(desktop-m) {
+        padding: 0 340px;
+    }
 }

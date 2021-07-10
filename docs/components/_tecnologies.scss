@@ -21,6 +21,9 @@
             "i j k l"
         ;
         justify-self: center;
+        @include media(desktop-m)  {
+            width: 580px;
+        }
         &--animation:hover {
             transform: scale(1.4);
         }
