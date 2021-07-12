@@ -11,6 +11,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Roboto", sans-serif;
+  position: relative;
 }
 
 .hide {
@@ -483,6 +484,53 @@ body {
   align-self: center;
   transition: transform 300ms;
   grid-area: j;
+}
+
+.loader {
+  z-index: 3;
+  height: 100vh;
+  width: 100%;
+  background-color: aliceblue;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: loader 2s linear forwards;
+}
+.loader div {
+  width: 40px;
+  height: 40px;
+  background-color: #333;
+  margin: 10px;
+  transform: scale();
+  animation: dot 2s ease-in-out infinite;
+}
+.loader div:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.loader div:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+@keyframes dot {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.2);
+  }
+}
+@keyframes loader {
+  0% {
+    opacity: 100%;
+  }
+  90% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 0%;
+    visibility: hidden;
+  }
 }
 
 /*# sourceMappingURL=mobile.css.map */
