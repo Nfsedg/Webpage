@@ -78,6 +78,16 @@ body {
   background-color: #527183;
   color: #d6e0e7;
 }
+.navigation__logo .logo {
+  display: block;
+  padding: 0;
+  background-image: url("../img/favicon-32x32.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 25px;
+  width: 25px;
+}
 .navigation__burgermenu {
   background-position: center;
   background-size: cover;

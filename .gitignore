@@ -2,3 +2,6 @@
 /.vscode
 /navbar
 /css
+package-lock.json
+/dist
+babel.config.json
