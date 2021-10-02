@@ -21,14 +21,45 @@
     }
     &__info {
         font-family: $Fuente-textos;
-        width: 250px;
-        height: 200px;
-        background-color: $color-primario;
+        width: 260px;
+        height: 160px;
         margin: 1.5rem;
-        border-radius: 0.8rem;
+        border-radius: 1rem;
         justify-self: center;
-        &:hover::backdrop {
-            content: attr(div);
+        display: flex;
+        align-items: flex-end;
+        a {
+            font-size: 1.8rem;
+            font-weight: 400;
+            font-family: $Fuente-textos;
+            color: $color-claro;
+            text-align: center;
+            position: relative;
+            border-radius: 0 0 1rem 1rem;
+            background: linear-gradient( rgba(255, 255, 255, 0), rgba(39, 39, 39, 0.788));
+            opacity: 0;
         }
+        &:hover a {
+            opacity: 1;
+            animation: description 500ms;
+        }
+        &:nth-child(1) {
+            @include background-img;
+            background-image: url('../img/webtracking.PNG');
+        }
+        &:nth-child(2) {
+            @include background-img;
+            background-image: url('../img/WeatherApp.PNG');
+        }
+    }
+}
+@keyframes description {
+    0% {
+        opacity: 0;
+        bottom: -15px;
+    }
+    100% {
+        opacity: 1;
+        bottom: 0;
     }
 }

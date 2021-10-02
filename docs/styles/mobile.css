@@ -267,17 +267,52 @@ body {
 }
 .proyects__info {
   font-family: "Benne", serif;
-  width: 250px;
-  height: 200px;
-  background-color: #333;
+  width: 260px;
+  height: 160px;
   margin: 1.5rem;
-  border-radius: 0.8rem;
+  border-radius: 1rem;
   justify-self: center;
+  display: flex;
+  align-items: flex-end;
 }
-.proyects__info:hover::backdrop {
-  content: attr(div);
+.proyects__info a {
+  font-size: 1.8rem;
+  font-weight: 400;
+  font-family: "Benne", serif;
+  color: #d6e0e7;
+  text-align: center;
+  position: relative;
+  border-radius: 0 0 1rem 1rem;
+  background: linear-gradient(rgba(255, 255, 255, 0), rgba(39, 39, 39, 0.788));
+  opacity: 0;
+}
+.proyects__info:hover a {
+  opacity: 1;
+  animation: description 500ms;
+}
+.proyects__info:nth-child(1) {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../img/webtracking.PNG");
+}
+.proyects__info:nth-child(2) {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../img/WeatherApp.PNG");
 }
 
+@keyframes description {
+  0% {
+    opacity: 0;
+    bottom: -15px;
+  }
+  100% {
+    opacity: 1;
+    bottom: 0;
+  }
+}
 .message {
   width: 100%;
   display: flex;
