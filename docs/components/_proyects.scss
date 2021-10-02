@@ -30,7 +30,7 @@
         align-items: flex-end;
         a {
             font-size: 1.8rem;
-            font-weight: 400;
+            font-weight: 500;
             font-family: $Fuente-textos;
             color: $color-claro;
             text-align: center;
@@ -50,6 +50,10 @@
         &:nth-child(2) {
             @include background-img;
             background-image: url('../img/WeatherApp.PNG');
+        }
+        &:nth-child(3) {
+            @include background-img;
+            background-image: url('../img/cientifico.PNG');
         }
     }
 }

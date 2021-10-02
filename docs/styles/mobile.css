@@ -277,7 +277,7 @@ body {
 }
 .proyects__info a {
   font-size: 1.8rem;
-  font-weight: 400;
+  font-weight: 500;
   font-family: "Benne", serif;
   color: #d6e0e7;
   text-align: center;
@@ -301,6 +301,12 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-image: url("../img/WeatherApp.PNG");
+}
+.proyects__info:nth-child(3) {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../img/cientifico.PNG");
 }
 
 @keyframes description {
