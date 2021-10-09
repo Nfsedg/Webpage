@@ -3,6 +3,8 @@ const item = document.getElementById('items-nav')
 
 btn.addEventListener('click', () => displayMenu())
 
+item.classList.add('hide')
+
 let state;
 function displayMenu() {
   if(state === 1) {
