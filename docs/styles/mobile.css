@@ -312,6 +312,12 @@ body {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  background-image: url("../img/SPLITTER.png");
+}
+.proyects__info:nth-child(5) {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   background-image: url("../img/todo.png");
 }
 
