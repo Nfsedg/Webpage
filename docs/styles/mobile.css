@@ -308,6 +308,12 @@ body {
   background-repeat: no-repeat;
   background-image: url("../img/cientifico.PNG");
 }
+.proyects__info:nth-child(4) {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../img/todo.png");
+}
 
 @keyframes description {
   0% {

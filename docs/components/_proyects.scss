@@ -55,6 +55,14 @@
             @include background-img;
             background-image: url('../img/cientifico.PNG');
         }
+        &:nth-child(4) {
+            @include background-img;
+            background-image: url('../img/SPLITTER.png');
+        }
+        &:nth-child(5) {
+            @include background-img;
+            background-image: url('../img/todo.png');
+        }
     }
 }
 @keyframes description {
