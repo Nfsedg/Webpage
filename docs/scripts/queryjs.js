@@ -1,19 +1,23 @@
+const btn = document.getElementById('hm-menu')
 const navItems = document.getElementById('items-nav')
-window.addEventListener("resize", () => scriptQueryChange())
 
-function scriptQueryChange() {
-    const mobileExist = document.getElementById('mobile')
-    if(window.innerWidth < 700 && !mobileExist) {
-        const script = document.createElement('script')
-        script.type = 'text/javascript';
-        script.src = 'docs/scripts/mobile.js';
-        script.id = 'mobile';
+let state;
 
-        const tag = document.getElementsByTagName('script')[0]
+btn.addEventListener('click', displayMenu)
+
+
+function displayMenu() {
+    if(window.innerWidth < 700) {
         navItems.classList.add('hide')
-        tag.parentNode.insertBefore(script, tag)
-    } if (window.innerWidth > 700 && mobileExist) {
-        mobileExist.remove()
+        if(state === 1) {
+            navItems.classList.add('hide')
+            state = 0;
+          } else {
+            navItems.classList.remove('hide')
+            state = 1;
+          }
+
+    } else if (window.innerWidth > 700) {
         navItems.classList.remove('hide')
     }
 }

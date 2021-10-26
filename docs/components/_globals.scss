@@ -43,6 +43,9 @@ body {
 }
 .hide {
     display: none;
+    @include media(desktop) {
+        display: block;
+       }
 }
 
 .main {

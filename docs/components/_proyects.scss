@@ -29,14 +29,19 @@
         display: flex;
         align-items: flex-end;
         a {
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            height: 100%;
+            width: 100%;
             font-size: 1.8rem;
             font-weight: 500;
             font-family: $Fuente-textos;
             color: $color-claro;
-            text-align: center;
             position: relative;
+            text-align: center;
             border-radius: 0 0 1rem 1rem;
-            background: linear-gradient( rgba(255, 255, 255, 0), rgba(39, 39, 39, 0.788));
+            background: linear-gradient( rgba(255, 255, 255, 0), rgba(39, 39, 39, 0.863));
             opacity: 0;
         }
         &:hover a {
@@ -62,6 +67,10 @@
         &:nth-child(5) {
             @include background-img;
             background-image: url('../img/todo.png');
+        }
+        &:nth-child(6) {
+            @include background-img;
+            background-image: url('../img/TodoReact.PNG');
         }
     }
 }

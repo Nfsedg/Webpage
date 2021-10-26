@@ -8,7 +8,7 @@
     justify-content: center;
     align-items: center;
 
-    animation: loader 2s linear forwards;
+    animation: loader 1s linear forwards;
     div {
         width: 40px;
         height: 40px;
@@ -17,7 +17,7 @@
 
         transform: scale();
 
-        animation: dot 2s ease-in-out infinite;
+        animation: dot 1s ease-in-out infinite;
     }
     div:nth-child(2) {
         animation-delay: 0.2s;

@@ -164,9 +164,6 @@ body {
   color: #527183;
   font-family: "Noto Serif", serif;
 }
-.aboutme__download:hover {
-  color: #d6e0e7;
-}
 .aboutme__layover {
   height: 180px;
   width: 130px;
@@ -281,14 +278,19 @@ body {
   align-items: flex-end;
 }
 .proyects__info a {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
   font-size: 1.8rem;
   font-weight: 500;
   font-family: "Benne", serif;
   color: #d6e0e7;
-  text-align: center;
   position: relative;
+  text-align: center;
   border-radius: 0 0 1rem 1rem;
-  background: linear-gradient(rgba(255, 255, 255, 0), rgba(39, 39, 39, 0.788));
+  background: linear-gradient(rgba(255, 255, 255, 0), rgba(39, 39, 39, 0.863));
   opacity: 0;
 }
 .proyects__info:hover a {
@@ -324,6 +326,12 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-image: url("../img/todo.png");
+}
+.proyects__info:nth-child(6) {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../img/TodoReact.PNG");
 }
 
 @keyframes description {
@@ -563,7 +571,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: loader 2s linear forwards;
+  animation: loader 1s linear forwards;
 }
 .loader div {
   width: 40px;
@@ -571,7 +579,7 @@ body {
   background-color: #333;
   margin: 10px;
   transform: scale();
-  animation: dot 2s ease-in-out infinite;
+  animation: dot 1s ease-in-out infinite;
 }
 .loader div:nth-child(2) {
   animation-delay: 0.2s;
