@@ -334,6 +334,46 @@ body {
   background-image: url("../img/TodoReact.PNG");
 }
 
+.hideModal {
+  display: none;
+}
+
+.show-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.356);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+.show-modal div {
+  height: 450px;
+  width: 450px;
+  background-color: #333;
+}
+
+.modal__details {
+  animation: open 200ms ease-in-out;
+}
+.modal__details a {
+  font-family: "Benne", serif;
+  color: #d6e0e7;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+@keyframes open {
+  0% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 @keyframes description {
   0% {
     opacity: 0;
