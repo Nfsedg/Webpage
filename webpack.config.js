@@ -1,4 +1,3 @@
-const { request } = require('http')
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCSSExtractPlugin = require('mini-css-extract-plugin');
@@ -22,20 +21,19 @@ module.exports = {
             }
           },
           { 
-            test: /\.css$/, 
-            loader: [
-              MiniCSSExtractPlugin.loader,
-              "css-loader"
-            ]
-          },
-          { 
-            test: /\.scss$/, 
-            loader: [
+            test: /\.s[ac]ss$/i, 
+            use: [
               MiniCSSExtractPlugin.loader,
               "css-loader",
-              "sass-loader"
+              "sass-loader",
+              {
+                loader: "sass-loader",
+                options: {
+                  includePaths: [path.resolve(__dirname, './node_modules')]
+                }
+              }
             ]
-          },
+          }
         ]
       },
     plugins: [

@@ -1,124 +1,147 @@
 .proyects {
-    width: 100%;
-    h1 {
-        text-align: center;
-        font-size: 1.8rem;
-        font-family: $Fuente-titulos;
-    }
-    &__container {
-        margin: 0 auto;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-        align-items: center;
-        @include media(desktop) {
-            width: 700px;
-        }
-        @include media(desktop-m) {
-            width: 1100px;
-        }
-    }
-    &__info {
-        font-family: $Fuente-textos;
-        width: 260px;
-        height: 160px;
-        margin: 1.5rem;
-        border-radius: 1rem;
-        justify-self: center;
-        display: flex;
-        align-items: flex-end;
-        a {
-            display: flex;
-            align-items: flex-end;
-            justify-content: center;
-            height: 100%;
-            width: 100%;
-            font-size: 1.8rem;
-            font-weight: 500;
-            font-family: $Fuente-textos;
-            color: $color-claro;
-            position: relative;
-            text-align: center;
-            border-radius: 0 0 1rem 1rem;
-            background: linear-gradient( rgba(255, 255, 255, 0), rgba(39, 39, 39, 0.863));
-            opacity: 0;
-        }
-        &:hover a {
-            opacity: 1;
-            animation: description 500ms;
-        }
-        &:nth-child(1) {
-            @include background-img;
-            background-image: url('../img/webtracking.PNG');
-        }
-        &:nth-child(2) {
-            @include background-img;
-            background-image: url('../img/WeatherApp.PNG');
-        }
-        &:nth-child(3) {
-            @include background-img;
-            background-image: url('../img/cientifico.PNG');
-        }
-        &:nth-child(4) {
-            @include background-img;
-            background-image: url('../img/SPLITTER.png');
-        }
-        &:nth-child(5) {
-            @include background-img;
-            background-image: url('../img/todo.png');
-        }
-        &:nth-child(6) {
-            @include background-img;
-            background-image: url('../img/TodoReact.PNG');
-        }
-    }
-}
-.hideModal {
-    display: none;
-}
-.show-modal {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.356);
+  width: 100%;
+  h1 {
+    text-align: center;
+    font-size: 1.8rem;
+    font-family: $Fuente-titulos;
+  }
+  &__container {
+    margin: 0 auto;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    z-index: 1;
-    div {
-        height: 450px;
-        width: 450px;
-        background-color: $color-primario;
+    align-items: center;
+    @include media(desktop) {
+      width: 700px;
     }
+    @include media(desktop-m) {
+      width: 1100px;
+    }
+  }
+  &__info {
+    font-family: $Fuente-textos;
+    width: 260px;
+    height: 160px;
+    margin: 1.5rem;
+    border-radius: 1rem;
+    justify-self: center;
+    display: flex;
+    align-items: flex-end;
+    a {
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      height: 100%;
+      width: 100%;
+      font-size: 1.8rem;
+      font-weight: 500;
+      font-family: $Fuente-textos;
+      color: $color-claro;
+      position: relative;
+      text-align: center;
+      border-radius: 0 0 1rem 1rem;
+      background: linear-gradient(
+        rgba(255, 255, 255, 0),
+        rgba(39, 39, 39, 0.863)
+      );
+      opacity: 0;
+    }
+    &:hover a {
+      opacity: 1;
+      animation: description 500ms;
+    }
+    &:nth-child(1) {
+      @include background-img;
+      background-image: url("../img/webtracking.PNG");
+    }
+    &:nth-child(2) {
+      @include background-img;
+      background-image: url("../img/WeatherApp.PNG");
+    }
+    &:nth-child(3) {
+      @include background-img;
+      background-image: url("../img/cientifico.PNG");
+    }
+    &:nth-child(4) {
+      @include background-img;
+      background-image: url("../img/SPLITTER.png");
+    }
+    &:nth-child(5) {
+      @include background-img;
+      background-image: url("../img/todo.png");
+    }
+    &:nth-child(6) {
+      @include background-img;
+      background-image: url("../img/TodoReact.PNG");
+    }
+  }
+}
+.hideModal {
+  display: none;
+}
+.show-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.356);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  div {
+    border-radius: 5px;
+    height: 450px;
+    width: 80%;
+    max-width: 460px;
+    background-color: $color-primario;
+  }
 }
 .modal__details {
-    animation: open 200ms ease-in-out;
-    a {
-        font-family: $Fuente-textos;
-        color: $color-claro;
-        font-size: 1.8rem;
-        font-weight: 500;
-    }
+  animation: open 200ms ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  .button {
+    margin: 10px;
+    background: none;
+    border: none;
+    color: $color-claro;
+    position: absolute;
+    left: 0;
+  }
+  a {
+    font-family: $Fuente-textos;
+    color: $color-claro;
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin: 20px;
+  }
+  img {
+    margin-top: 30px;
+    width: 90%;
+  }
 }
 @keyframes open {
-    0% {
-        transform: scale(0.8);
-    }
-    100% {
-        transform: scale(1);
-    }
+  0% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 @keyframes description {
-    0% {
-        opacity: 0;
-        bottom: -15px;
-    }
-    100% {
-        opacity: 1;
-        bottom: 0;
-    }
+  0% {
+    opacity: 0;
+    bottom: -15px;
+  }
+  100% {
+    opacity: 1;
+    bottom: 0;
+  }
 }
