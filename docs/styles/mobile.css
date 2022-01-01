@@ -1,5 +1,7 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html {
@@ -277,7 +279,7 @@ body {
   display: flex;
   align-items: flex-end;
 }
-.proyects__info a {
+.proyects__info p {
   display: flex;
   align-items: flex-end;
   justify-content: center;
@@ -293,7 +295,7 @@ body {
   background: linear-gradient(rgba(255, 255, 255, 0), rgba(39, 39, 39, 0.863));
   opacity: 0;
 }
-.proyects__info:hover a {
+.proyects__info:hover p, .proyects__info a {
   opacity: 1;
   animation: description 500ms;
 }
@@ -340,6 +342,82 @@ body {
   background-image: url("../img/MyTodoReact.png");
 }
 
+.hideModal {
+  display: none;
+}
+
+.show-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.356);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+.show-modal div {
+  border-radius: 5px;
+  width: 80%;
+  max-width: 560px;
+  background-color: #333;
+}
+
+.modal__details {
+  animation: open 200ms ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+.modal__details--description {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  color: #d6e0e7;
+  font-family: "Benne", serif;
+  line-height: 24px;
+  margin-bottom: 16px;
+}
+.modal__details p {
+  margin-bottom: 30px;
+}
+.modal__details a {
+  margin: 15px;
+  color: #d6e0e7;
+  text-decoration: none;
+}
+.modal__details a h2 {
+  font-size: 26px;
+  margin: 0;
+  padding: 0;
+  font-family: "Benne", serif;
+}
+.modal__details .button {
+  margin: 10px;
+  background: none;
+  border: none;
+  color: #d6e0e7;
+  position: absolute;
+  left: 0;
+}
+.modal__details img {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  width: 90%;
+}
+
+@keyframes open {
+  0% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 @keyframes description {
   0% {
     opacity: 0;

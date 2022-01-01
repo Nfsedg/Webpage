@@ -28,7 +28,7 @@
     justify-self: center;
     display: flex;
     align-items: flex-end;
-    a {
+    p, a {
       display: flex;
       align-items: flex-end;
       justify-content: center;
@@ -47,7 +47,7 @@
       );
       opacity: 0;
     }
-    &:hover a {
+    &:hover p, a {
       opacity: 1;
       animation: description 500ms;
     }
@@ -81,6 +81,80 @@
     }
   }
 }
+.hideModal {
+  display: none;
+}
+.show-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.356);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  div {
+    border-radius: 5px;
+    width: 80%;
+    max-width: 560px;
+    background-color: $color-primario;
+  }
+}
+.modal__details {
+  animation: open 200ms ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  &--description {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    color: $color-claro;
+    font-family: $Fuente-textos;
+    line-height: 24px;
+    margin-bottom: 16px;
+  }
+  p {
+    margin-bottom: 30px;
+  }
+  a {
+    margin: 15px;
+    color: $color-claro;
+    text-decoration: none;
+    h2 {
+      font-size: 26px;
+      margin: 0;
+      padding: 0;
+      font-family: $Fuente-textos;
+    }
+  }
+  .button {
+    margin: 10px;
+    background: none;
+    border: none;
+    color: $color-claro;
+    position: absolute;
+    left: 0;
+  }
+  img {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    width: 90%;
+  }
+}
+@keyframes open {
+  0% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 @keyframes description {
   0% {
     opacity: 0;
