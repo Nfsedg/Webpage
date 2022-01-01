@@ -28,7 +28,7 @@
     justify-self: center;
     display: flex;
     align-items: flex-end;
-    a {
+    p, a {
       display: flex;
       align-items: flex-end;
       justify-content: center;
@@ -47,7 +47,7 @@
       );
       opacity: 0;
     }
-    &:hover a {
+    &:hover p, a {
       opacity: 1;
       animation: description 500ms;
     }
@@ -93,9 +93,8 @@
   z-index: 1;
   div {
     border-radius: 5px;
-    height: 450px;
     width: 80%;
-    max-width: 460px;
+    max-width: 560px;
     background-color: $color-primario;
   }
 }
@@ -106,6 +105,29 @@
   align-items: center;
   justify-content: space-between;
   position: relative;
+  &--description {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    color: $color-claro;
+    font-family: $Fuente-textos;
+    line-height: 24px;
+    margin-bottom: 16px;
+  }
+  p {
+    margin-bottom: 30px;
+  }
+  a {
+    margin: 15px;
+    color: $color-claro;
+    text-decoration: none;
+    h2 {
+      font-size: 26px;
+      margin: 0;
+      padding: 0;
+      font-family: $Fuente-textos;
+    }
+  }
   .button {
     margin: 10px;
     background: none;
@@ -114,15 +136,9 @@
     position: absolute;
     left: 0;
   }
-  a {
-    font-family: $Fuente-textos;
-    color: $color-claro;
-    font-size: 1.8rem;
-    font-weight: 500;
-    margin: 20px;
-  }
   img {
     margin-top: 30px;
+    margin-bottom: 10px;
     width: 90%;
   }
 }
