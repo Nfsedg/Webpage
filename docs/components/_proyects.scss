@@ -75,6 +75,10 @@
       @include background-img;
       background-image: url("../img/TodoReact.PNG");
     }
+    &:nth-child(7) {
+      @include background-img;
+      background-image: url("../img/MyTodoReact.png");
+    }
   }
 }
 .hideModal {

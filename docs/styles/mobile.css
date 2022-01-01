@@ -279,7 +279,7 @@ body {
   display: flex;
   align-items: flex-end;
 }
-.proyects__info p, .proyects__info a {
+.proyects__info p {
   display: flex;
   align-items: flex-end;
   justify-content: center;
@@ -334,6 +334,12 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-image: url("../img/TodoReact.PNG");
+}
+.proyects__info:nth-child(7) {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../img/MyTodoReact.png");
 }
 
 .hideModal {
