@@ -79,6 +79,10 @@
       @include background-img;
       background-image: url("../img/MyTodoReact.png");
     }
+    &:nth-child(8) {
+      @include background-img;
+      background-image: url("../img/countries-min.png");
+    }
   }
 }
 .hideModal {
