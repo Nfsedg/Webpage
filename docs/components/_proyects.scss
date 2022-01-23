@@ -81,6 +81,10 @@
     }
     &:nth-child(8) {
       @include background-img;
+      background-image: url("../img/countries-min.png");
+    }
+    &:nth-child(8) {
+      @include background-img;
       background-image: url("../img/rock-paper-scissors.png");
     }
   }

@@ -345,7 +345,11 @@ body {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+<<<<<<< HEAD
   background-image: url("../img/rock-paper-scissors.png");
+=======
+  background-image: url("../img/countries-min.png");
+>>>>>>> 1780c3b14950d98ebba59345822986063aa31772
 }
 
 .hideModal {
