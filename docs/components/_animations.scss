@@ -1,0 +1,13 @@
+.sprite {
+    background: url('../img/mario-sprite.png') no-repeat;
+    width: 28px;
+    height: 30px;
+    background-position: -80px -54px;
+    animation: move 1s steps(3, end) infinite;
+  }
+  
+  @keyframes move {
+    to {
+      background-position: -166px -52px;
+    }
+  }

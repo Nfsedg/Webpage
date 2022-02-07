@@ -83,9 +83,13 @@
       @include background-img;
       background-image: url("../img/countries-min.png");
     }
-    &:nth-child(8) {
+    &:nth-child(9) {
       @include background-img;
       background-image: url("../img/rock-paper-scissors.png");
+    }
+    &:nth-child(10) {
+      @include background-img;
+      background-image: url("../img/fake-ecommerce.png");
     }
   }
 }

@@ -11,7 +11,6 @@ function openModal(id) {
     let modalArray = document.querySelectorAll(`#${id}`)
     let modal = modalArray[1]
 
-    console.log(modal)
     let localButton = modal.childNodes[1].childNodes[1]
     localButton.addEventListener('click', () => closeModal(id))
 
