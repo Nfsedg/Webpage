@@ -91,6 +91,10 @@
       @include background-img;
       background-image: url("../img/fake-ecommerce.png");
     }
+    &:nth-child(11) {
+      @include background-img;
+      background-image: url("../img/thenewsocialmedia.webp");
+    }
   }
 }
 .hideModal {

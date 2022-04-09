@@ -359,6 +359,12 @@ body {
   background-repeat: no-repeat;
   background-image: url("../img/fake-ecommerce.png");
 }
+.proyects__info:nth-child(11) {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../img/thenewsocialmedia.webp");
+}
 
 .hideModal {
   display: none;
